@@ -1,0 +1,1 @@
+API documentation is available at [aptonic/dropzone3-actions/README.md](https://github.com/aptonic/dropzone3-actions/blob/master/README.md). My actions are not designed to be portable — some of them are integrated with my own scripts or programs.
