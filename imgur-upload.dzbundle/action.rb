@@ -1,5 +1,5 @@
 # Dropzone Action Info
-# Name: im-ul
+# Name: imgur-upload
 # Description: Upload image(s) to imgur.
 # Handles: Files
 # Creator: Zhiming Wang
@@ -12,6 +12,6 @@
 # MinDropzoneVersion: 3.0
 
 def dragged
-  ENV['PATH'] = '/usr/local/bin:/bin:/usr/bin'
-  IO.popen([ "#{Dir.home}/src/imgur-py/im-ul" ] + $items) {|io| $dz.text(io.read)}
+  ENV['PATH'] = "#{Dir.home}/.pyenv/shims:/usr/local/bin:/bin:/usr/bin"
+  IO.popen([ "imgur-upload" ] + $items) {|io| $dz.text(io.read)}
 end
